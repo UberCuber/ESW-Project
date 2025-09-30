@@ -6,7 +6,7 @@ void setup() {
   Serial.begin(115200);
   Serial.println("Adafruit AHT10/AHT20 Test!");
 
-  if (! aht.begin()) {
+  if (!aht.begin()) {
     Serial.println("Could not find AHT? Check wiring");
     while (1) delay(10);
   }
